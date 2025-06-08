@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro de Vehículo</title>
+
+  <link rel="stylesheet" href="css/registro.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Registro de Vehículo</h2>
+    <p id="provinciaDisplay"></p>
+
+    <div class="btn-group">
+      <button class="btn-provincial" id="provincialBtn">Peaje Provincial</button>
+      <button class="btn-nacional" id="nacionalBtn">Peaje Nacional</button>
+    </div>
+
+    
+    <div id="provincialSection" class="form-section">
+      <h3>Adherirse al Peaje Provincial</h3>
+      <input type="text" id="marcaProv" placeholder="Marca" />
+      <input type="text" id="patenteProv" placeholder="Patente" />
+      <button class="adherir-btn" id="adherirProvBtn">Adherirte</button>
+    </div>
+
+ 
+    <div id="nacionalSection" class="form-section">
+      <h3>Adherirse al Peaje Nacional</h3>
+      <input type="text" id="marcaNac" placeholder="Marca" />
+      <input type="text" id="patenteNac" placeholder="Patente" />
+      <button class="adherir-btn" id="adherirNacBtn">Adherirte</button>
+    </div>
+
+    <div class="message" id="message"></div>
+  </div>
+
+  <script src="java/registro.js"></script>
+</body>
+</html>
